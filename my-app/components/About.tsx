@@ -14,16 +14,16 @@ export function About() {
                 <User className="w-16 h-16 text-white" />
               </div>
             </div>
-            
+
             <div className="flex-1">
               <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                Backend Developer
+                백엔드 개발자
               </h1>
               <p className="text-xl text-gray-700 mb-6">
                 확장 가능한 시스템 설계와 효율적인 API 개발에 열정을 가진 백엔드 개발자입니다.
                 대규모 트래픽을 처리하는 서비스 설계 및 최적화에 집중하고 있습니다.
               </p>
-              
+
               <div className="flex flex-wrap gap-4 mb-6 text-gray-600">
                 <span className="flex items-center gap-2">
                   <MapPin className="w-5 h-5" />
@@ -31,7 +31,7 @@ export function About() {
                 </span>
                 <span className="flex items-center gap-2">
                   <Briefcase className="w-5 h-5" />
-                  5+ years experience
+                  5년 이상의 경력
                 </span>
               </div>
 
@@ -71,7 +71,7 @@ export function About() {
       <section className="mb-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
           <User className="w-8 h-8 text-blue-600" />
-          About Me
+          자기 소개
         </h2>
         <div className="bg-white border border-gray-200 rounded-xl p-8">
           <div className="prose prose-lg max-w-none text-gray-700">
@@ -95,7 +95,7 @@ export function About() {
       <section className="mb-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
           <Code className="w-8 h-8 text-blue-600" />
-          Tech Stack
+          기술 스택
         </h2>
         <TechStack />
       </section>
@@ -104,7 +104,7 @@ export function About() {
       <section className="mb-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
           <Briefcase className="w-8 h-8 text-blue-600" />
-          Career Timeline
+          경력 타임라인
         </h2>
         <Timeline />
       </section>
@@ -113,7 +113,7 @@ export function About() {
       <section>
         <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
           <Award className="w-8 h-8 text-blue-600" />
-          Achievements & Certifications
+          수상 및 자격증
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
@@ -135,8 +135,8 @@ export function About() {
                 <Award className="w-6 h-6 text-blue-600" />
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 mb-2">Best Performance Award</h3>
-                <p className="text-gray-600 text-sm mb-2">Database optimization project</p>
+                <h3 className="font-bold text-gray-900 mb-2">최우수 퍼포먼스 상</h3>
+                <p className="text-gray-600 text-sm mb-2">데이터베이스 최적화 프로젝트</p>
                 <p className="text-gray-500 text-sm">2024</p>
               </div>
             </div>
@@ -148,7 +148,7 @@ export function About() {
                 <Award className="w-6 h-6 text-green-600" />
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 mb-2">Open Source Contributor</h3>
+                <h3 className="font-bold text-gray-900 mb-2">오픈 소스 기여자</h3>
                 <p className="text-gray-600 text-sm mb-2">Express.js, Fastify</p>
                 <p className="text-gray-500 text-sm">2023 - Present</p>
               </div>
@@ -161,8 +161,8 @@ export function About() {
                 <Award className="w-6 h-6 text-purple-600" />
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 mb-2">Tech Blog Award</h3>
-                <p className="text-gray-600 text-sm mb-2">Best Technical Writing</p>
+                <h3 className="font-bold text-gray-900 mb-2">기술 블로그 어워드</h3>
+                <p className="text-gray-600 text-sm mb-2">최우수 기술 문서 작성</p>
                 <p className="text-gray-500 text-sm">2023</p>
               </div>
             </div>

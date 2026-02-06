@@ -1,7 +1,7 @@
 export function TechStack() {
   const techCategories = [
     {
-      category: 'Languages',
+      category: '언어',
       color: 'blue',
       skills: [
         { name: 'JavaScript/TypeScript', level: 95 },
@@ -11,7 +11,7 @@ export function TechStack() {
       ]
     },
     {
-      category: 'Backend Frameworks',
+      category: '백엔드 프레임워크',
       color: 'green',
       skills: [
         { name: 'Node.js/Express', level: 95 },
@@ -21,7 +21,7 @@ export function TechStack() {
       ]
     },
     {
-      category: 'Databases',
+      category: '데이터베이스',
       color: 'purple',
       skills: [
         { name: 'PostgreSQL', level: 90 },
@@ -31,7 +31,7 @@ export function TechStack() {
       ]
     },
     {
-      category: 'DevOps & Tools',
+      category: '데브옵스 & 도구',
       color: 'orange',
       skills: [
         { name: 'Docker/Kubernetes', level: 85 },
@@ -41,7 +41,7 @@ export function TechStack() {
       ]
     },
     {
-      category: 'Message Queues',
+      category: '메시지 큐',
       color: 'red',
       skills: [
         { name: 'RabbitMQ', level: 80 },
@@ -50,7 +50,7 @@ export function TechStack() {
       ]
     },
     {
-      category: 'Testing & Monitoring',
+      category: '테스트 & 모니터링',
       color: 'indigo',
       skills: [
         { name: 'Jest/Vitest', level: 90 },
@@ -86,7 +86,7 @@ export function TechStack() {
                 {category.category}
               </span>
             </div>
-            
+
             <div className="space-y-4">
               {category.skills.map((skill) => (
                 <div key={skill.name}>

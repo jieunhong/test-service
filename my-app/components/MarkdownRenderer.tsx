@@ -1,3 +1,5 @@
+import React from 'react';
+
 type MarkdownRendererProps = {
   content: string;
 };
@@ -6,7 +8,7 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
   // Simple markdown parser for common elements
   const parseMarkdown = (text: string) => {
     const lines = text.split('\n');
-    const elements: JSX.Element[] = [];
+    const elements: React.JSX.Element[] = [];
     let currentList: string[] = [];
     let inCodeBlock = false;
     let codeBlockLines: string[] = [];

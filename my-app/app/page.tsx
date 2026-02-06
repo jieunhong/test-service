@@ -63,7 +63,7 @@ export default function Home() {
 
       <footer className="bg-gray-900 text-gray-400 py-12 mt-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <p>&copy; 2026 Backend Dev Blog. All rights reserved.</p>
+          <p>&copy; 2026 백엔드 개발 블로그. All rights reserved.</p>
         </div>
       </footer>
     </div>

@@ -57,7 +57,7 @@ export function BlogList({
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
           <input
             type="text"
-            placeholder="Search articles..."
+            placeholder="기사 검색..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -66,7 +66,7 @@ export function BlogList({
 
         {/* Categories */}
         <div className="mb-4">
-          <h3 className="text-sm font-semibold text-gray-700 mb-3">Categories</h3>
+          <h3 className="text-sm font-semibold text-gray-700 mb-3">카테고리</h3>
           <div className="flex flex-wrap gap-2">
             {categories.map(category => (
               <button
@@ -75,8 +75,8 @@ export function BlogList({
                   selectedCategory === category ? null : category
                 )}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${selectedCategory === category
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
               >
                 {category}
@@ -87,15 +87,15 @@ export function BlogList({
 
         {/* Tags */}
         <div>
-          <h3 className="text-sm font-semibold text-gray-700 mb-3">Tags</h3>
+          <h3 className="text-sm font-semibold text-gray-700 mb-3">태그</h3>
           <div className="flex flex-wrap gap-2">
             {allTags.map(tag => (
               <button
                 key={tag}
                 onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
                 className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${selectedTag === tag
-                    ? 'bg-purple-600 text-white'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  ? 'bg-purple-600 text-white'
+                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                   }`}
               >
                 #{tag}
@@ -111,7 +111,7 @@ export function BlogList({
             className="mt-4 flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900"
           >
             <X className="w-4 h-4" />
-            Clear all filters
+            모든 필터 초기화
           </button>
         )}
       </div>
@@ -119,7 +119,7 @@ export function BlogList({
       {/* Results Count */}
       <div className="mb-6">
         <p className="text-gray-600">
-          {filteredPosts.length} {filteredPosts.length === 1 ? 'article' : 'articles'} found
+          {filteredPosts.length}개의 기사를 찾았습니다
         </p>
       </div>
 
@@ -136,12 +136,12 @@ export function BlogList({
         </div>
       ) : (
         <div className="text-center py-12">
-          <p className="text-gray-500">No articles found matching your criteria.</p>
+          <p className="text-gray-500">조건에 맞는 기사를 찾을 수 없습니다.</p>
           <button
             onClick={clearFilters}
             className="mt-4 text-blue-600 hover:text-blue-700 font-medium"
           >
-            Clear filters and show all articles
+            필터 초기화 및 모든 기사 보기
           </button>
         </div>
       )}

@@ -14,9 +14,9 @@ export function Timeline() {
   const timelineData: TimelineItem[] = [
     {
       id: '1',
-      title: 'Senior Backend Engineer',
+      title: '시니어 백엔드 엔지니어',
       company: 'Tech Corp',
-      period: '2024 - Present',
+      period: '2024 - 현재',
       description: '대규모 e-커머스 플랫폼의 백엔드 아키텍처 설계 및 구현을 담당',
       achievements: [
         '마이크로서비스 아키텍처로 전환하여 시스템 확장성 200% 향상',
@@ -28,7 +28,7 @@ export function Timeline() {
     },
     {
       id: '2',
-      title: 'Backend Engineer',
+      title: '백엔드 엔지니어',
       company: 'StartUp Inc',
       period: '2022 - 2024',
       description: '핀테크 스타트업에서 결제 시스템 및 API 개발',
@@ -42,7 +42,7 @@ export function Timeline() {
     },
     {
       id: '3',
-      title: 'Junior Backend Developer',
+      title: '주니어 백엔드 개발자',
       company: 'Digital Agency',
       period: '2020 - 2022',
       description: '다양한 클라이언트 프로젝트의 백엔드 개발 담당',
@@ -56,7 +56,7 @@ export function Timeline() {
     },
     {
       id: '4',
-      title: 'Computer Science Degree',
+      title: '컴퓨터 공학 학사',
       company: 'University',
       period: '2016 - 2020',
       description: '컴퓨터 공학 학사 학위 취득',
@@ -71,23 +71,23 @@ export function Timeline() {
 
   const getColorClasses = (color: string) => {
     const colors: Record<string, { dot: string; line: string; badge: string }> = {
-      blue: { 
-        dot: 'bg-blue-600 ring-blue-100', 
+      blue: {
+        dot: 'bg-blue-600 ring-blue-100',
         line: 'bg-blue-200',
         badge: 'bg-blue-100 text-blue-700'
       },
-      green: { 
-        dot: 'bg-green-600 ring-green-100', 
+      green: {
+        dot: 'bg-green-600 ring-green-100',
         line: 'bg-green-200',
         badge: 'bg-green-100 text-green-700'
       },
-      purple: { 
-        dot: 'bg-purple-600 ring-purple-100', 
+      purple: {
+        dot: 'bg-purple-600 ring-purple-100',
         line: 'bg-purple-200',
         badge: 'bg-purple-100 text-purple-700'
       },
-      orange: { 
-        dot: 'bg-orange-600 ring-orange-100', 
+      orange: {
+        dot: 'bg-orange-600 ring-orange-100',
         line: 'bg-orange-200',
         badge: 'bg-orange-100 text-orange-700'
       },
